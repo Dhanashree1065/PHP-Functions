@@ -1,0 +1,49 @@
+Functions in PHP
+
+A PHP function is a chunk of code that can be used over and over again. It accepts argument lists as input and returns a result. PHP comes with thousands of built-in functions.
+Conditional functions, Function within Functions, and Recursive functions can all be defined in PHP.
+
+The Benefits of PHP Functions
+
+1. Reusability of code: Unlike other programming languages, PHP functions are defined only once and can be called several times. 
+2. Less Code: It saves a lot of code because the reasoning doesn't have to be written many times. You can write the logic only once and reuse it by using functions.
+3. Easy to understand: PHP functions are simple to grasp and separate the programming logic. Because every logic is split into functions, it is easier to understand the application's flow.
+
+User-defined Functions in PHP
+
+
+User-defined functions are simple to declare and call. Let's have a look at the syntax for defining user-defined functions.
+Syntax
+1. function functionname(){  
+2. //code to be executed  
+3. }  
+
+Note: Function names must begin with a letter and an underscore, just like other PHP labels. It must not begin with a number or a special symbol.
+
+PHP Functions Arguments
+
+The information can be passed to the PHP function via parameters, which are separated by a comma.
+Call by Value (default), Call by Reference, Default argument values, and Variable-length argument list are all supported by PHP.
+
+Call By Value in PHP
+You can call functions by value and by reference in PHP. When using PHP call by value, the actual value is not changed if it is changed within the function.
+The term "call by value" refers to passing a value to a function directly. The value of a local variable is used by the called function; any changes to it have no effect on the source variable.
+
+Call By Reference in PHP
+When a PHP function is called by reference, the real value is changed if it is changed inside the function. You must use the & (ampersand) symbol with formal arguments in this scenario. The & denotes the variable's reference.
+Passing the location of a variable where the actual value is kept is known as calling by reference. The value stored in the given address is used by the called function; any changes to it effect the source variable.
+
+Function for Default Argument Values in PHP
+
+PHP allows you to create default argument values in the C++ style.
+If you don't supply a value to the function in this situation, it will utilise the default parameter value.
+
+PHP is a Loosely Typed Programming Language (LTL).
+
+1. Notice how we didn't have to inform PHP what data type the variable is in the previous example.
+
+2. Depending on the value of the variable, PHP assigns it a data type automatically. You can do things like add a string to an integer without raising an error because the data types aren't established in a strict sense.
+
+3. Type declarations were introduced in PHP 7. This allows us to define the intended data type when creating a function, and the strict declaration ensures that if the data type mismatches, a "Fatal Error" is thrown.
+
+4. Declare(strict types=1); is required to specify strict. The first line of the PHP file must contain this.
